@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previous Trees</title>
+</head>
+<body>
+    <h1>Previous Trees</h1>
+    <table>
+        <tr>
+            <th>Input Numbers</th>
+            <th>Tree Structure</th>
+        </tr>
+        <tr th:each="tree : ${trees}">
+            <td th:text="${tree.inputNum}"></td>
+            <td th:text="${tree.binaryStructure}"></td>
+        </tr>
+    </table>
+    <a href="/enter-numbers">Back</a>
+</body>
+</html>
